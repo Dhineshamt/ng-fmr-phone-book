@@ -1,5 +1,5 @@
-<nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" [routerLink]="['/']">
     <img
       src="assets/angular.png"
       width="30"
@@ -9,4 +9,27 @@
     />
     Phonebook Demo
   </a>
+
+  <div class="navbar-nav">
+    <a
+      class="nav-item nav-link"
+      [routerLink]="['/']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a
+      class="nav-item nav-link"
+      [routerLink]="['/tform']"
+      routerLinkActive="active"
+      >T-Form</a
+    >
+
+    <a
+      class="nav-item nav-link"
+      [routerLink]="['/rform']"
+      routerLinkActive="active"
+      >R-Form</a
+    >
+  </div>
 </nav>
